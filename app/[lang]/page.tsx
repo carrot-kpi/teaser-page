@@ -18,10 +18,6 @@ interface HomeProps {
 export default async function Home({ params: { lang } }: HomeProps) {
     const i18nDictionary = await getI18nDictionary(lang);
 
-    // const handleClick = useCallback(() => {
-    //     console.log("clicked");
-    // }, []);
-
     return (
         <div className="dark w-screen flex flex-col items-center bg-black gap-6">
             <Logo className="relative h-auto text-orange w-1/3 mt-24 mb-16" />
