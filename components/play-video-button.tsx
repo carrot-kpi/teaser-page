@@ -2,7 +2,7 @@
 
 import PlayVideo from "@/icons/play-video";
 import { Button, Modal } from "@/lib/carrot-kpi-ui";
-import { useCallback, type ReactElement, useState } from "react";
+import { useCallback, useState } from "react";
 
 interface PlayVideoButtonProps {
     playVideoMessage: string;
