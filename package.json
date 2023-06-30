@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint && prettier --check .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "commitlint": "commitlint -e"
     },
     "dependencies": {
         "@carrot-kpi/switzer-font": "^0.1.0",
