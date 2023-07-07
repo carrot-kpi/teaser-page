@@ -6,6 +6,10 @@ on:
       - develop
   pull_request:
     types: [opened, synchronize, reopened]
+env:
+  NEXT_PUBLIC_FATHOM_SITE_ID: ${{ secrets.FATHOM_SITE_ID }}
+  FATHOM_SITE_ID: ${{ secrets.FATHOM_SITE_ID }}
+  FATHOM_API_KEY: ${{ secrets.FATHOM_API_KEY }}
 jobs:
   ci:
     runs-on: ubuntu-latest

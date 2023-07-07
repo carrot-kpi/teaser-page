@@ -1,5 +1,3 @@
-import "server-only";
-
 import type en from "./en";
 import { DEFAULT_LOCALE, type SUPPORTED_LOCALES } from "@/middleware";
 

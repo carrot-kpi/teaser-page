@@ -1,0 +1,8 @@
+{
+    "outDir": "./out/fathom",
+    "events": [
+        "PLAY_VIDEO",
+        "OPEN_TWITTER",
+        "OPEN_DISCORD"
+    ]
+}

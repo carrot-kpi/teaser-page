@@ -2,6 +2,8 @@
 
 import PlayVideo from "@/icons/play-video";
 import { Button, Modal } from "@/lib/carrot-kpi-ui";
+import * as Fathom from "@/lib/use-fathom-client";
+import { type FathomRegisteredEventName } from "../out/fathom/types";
 import { useCallback, useState } from "react";
 
 interface PlayVideoButtonProps {
@@ -17,6 +19,7 @@ function PlayVideoButton({
 
     const handleClick = useCallback(() => {
         setShowVideo(true);
+        Fathom.trackRegisteredGoal<FathomRegisteredEventName>("PLAY_VIDEO", 0);
     }, []);
 
     const handleDismiss = useCallback(() => {
