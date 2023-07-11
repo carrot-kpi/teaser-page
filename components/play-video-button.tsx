@@ -34,12 +34,12 @@ function PlayVideoButton({
                         ref={videoRef}
                         controls
                         playsInline
-                        autoPlay
+                        preload="metadata"
                         className="aspect-video w-full border border-black rounded-xl bg-gray-500 overflow-hidden"
                     >
                         <source
                             src="https://d2l3j8l4t44bvz.cloudfront.net"
-                            type="video/mp4"
+                            type="video/webm"
                         />
                         {videoNotSupportedMessage}
                     </video>
