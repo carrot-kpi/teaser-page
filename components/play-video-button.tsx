@@ -33,13 +33,15 @@ function PlayVideoButton({
                     <video
                         ref={videoRef}
                         controls
-                        playsInline
-                        preload="metadata"
                         className="aspect-video w-full border border-black rounded-xl bg-gray-500 overflow-hidden"
                     >
                         <source
-                            src="https://d2l3j8l4t44bvz.cloudfront.net"
+                            src="https://d2l3j8l4t44bvz.cloudfront.net/hero-video.webm"
                             type="video/webm"
+                        />
+                        <source
+                            src="https://d2l3j8l4t44bvz.cloudfront.net/hero-video.mp4"
+                            type="video/mp4"
                         />
                         {videoNotSupportedMessage}
                     </video>
