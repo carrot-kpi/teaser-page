@@ -4,12 +4,14 @@ interface SocialIconProps {
     className?: string;
     icon: FunctionComponent<SVGProps<SVGSVGElement>>;
     href: string;
+    onClick: () => void;
 }
 
-function SocialIcon({ className, icon: Icon, href }: SocialIconProps) {
+function SocialIcon({ className, icon: Icon, href, onClick }: SocialIconProps) {
     return (
         <a
             href={href}
+            onClick={onClick}
             target="_blank"
             rel="noopener noreferrer"
             className={`${className} w-20 h-20 flex justify-center items-center rounded-full`}
