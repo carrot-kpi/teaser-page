@@ -5,11 +5,6 @@ import * as Fathom from "@/lib/use-fathom-client";
 import { registeredEventsResolver } from "../out/fathom/utilities";
 
 function InitializeFathom() {
-    console.log(
-        "fathom envs",
-        process.env.NODE_ENV,
-        process.env.NEXT_PUBLIC_FATHOM_SITE_ID
-    );
     useEffect(() => {
         if (
             process.env.NODE_ENV === "production" &&

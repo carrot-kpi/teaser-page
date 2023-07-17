@@ -6,6 +6,7 @@
     .bg-grid-dark {
         @apply bg-2 md:bg-4;
         @apply bg-white-squares;
+        @apply bg-left-top;
     }
 }
 

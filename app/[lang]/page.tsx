@@ -41,7 +41,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
             <InitializeFathom />
             <div className="dark w-screen flex flex-col items-center bg-black gap-6">
                 <Logo className="relative h-auto text-orange w-3/4 md:w-1/3 mt-7 md:mt-24 mb:8 md:mb-16" />
-                <div className="relative bg-grid-dark w-[72rem] md:h-[32rem] border-b border-r border-light-grid text-center flex justify-center pt-10 md:pt-20 pb-24 mb-24">
+                <div className="relative bg-grid-dark w-[72rem] h-[32rem] md:h-[32rem] border-b border-r border-light-grid text-center flex justify-center pt-10 md:pt-20 pb-24 mb-24">
                     <div className="hidden md:block max-w-4xl">
                         <Typography variant="h1">
                             {i18nDictionary["home.1"]}
@@ -72,13 +72,13 @@ export default async function Home({ params: { lang } }: HomeProps) {
                         </Typography>
                     </div>
                     <div className="block max-w-sm px-5 md:hidden">
-                        <Typography variant="h3">
+                        <Typography variant="h2">
                             {i18nDictionary["home.1"]}
                         </Typography>
-                        <Typography variant="h3">
+                        <Typography variant="h2">
                             {i18nDictionary["home.2"]}
                         </Typography>
-                        <InlineTypography variant="h3">
+                        <InlineTypography variant="h2">
                             {i18nDictionary["home.3"]}
                         </InlineTypography>
                         <SocialLink
@@ -86,8 +86,9 @@ export default async function Home({ params: { lang } }: HomeProps) {
                             text={i18nDictionary["home.twitter"]}
                             className="!text-twitter-blue"
                             onClick={handleTwitterClick}
+                            variant="h2"
                         />
-                        <InlineTypography variant="h3">
+                        <InlineTypography variant="h2">
                             {i18nDictionary["home.4"]}
                         </InlineTypography>
                         <SocialLink
@@ -95,8 +96,9 @@ export default async function Home({ params: { lang } }: HomeProps) {
                             text={i18nDictionary["home.discord"]}
                             className="!text-discord-purple"
                             onClick={handleDiscordClick}
+                            variant="h2"
                         />
-                        <Typography variant="h3">
+                        <Typography variant="h2">
                             {i18nDictionary["home.5"]}
                         </Typography>
                     </div>
