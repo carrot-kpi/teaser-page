@@ -126,6 +126,8 @@ export default async function Home({ params: { lang } }: HomeProps) {
                 </Typography>
                 <Button
                     href="https://app.staging.carrot.community"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={{
                         root: "mb-8",
                         contentWrapper: "flex gap-3 items-center",
