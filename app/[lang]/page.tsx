@@ -7,12 +7,13 @@ import { getI18nDictionary } from "@/i18n/resources";
 import Discord from "@/icons/discord";
 import Logo from "@/icons/logo";
 import Twitter from "@/icons/twitter";
-import { Typography } from "@/lib/carrot-kpi-ui";
+import { Button, Typography } from "@/lib/carrot-kpi-ui";
 import { DISCORD_LINK, TWITTER_LINK } from "../constants";
 import * as Fathom from "@/lib/use-fathom-client";
 import { type FathomRegisteredEventName } from "../../out/fathom/types";
 import InitializeFathom from "@/components/fathom";
 import SocialLink from "@/components/social-link";
+import External from "@/icons/external";
 
 interface HomeProps {
     params: {
@@ -41,7 +42,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
             <InitializeFathom />
             <div className="dark w-screen flex flex-col items-center bg-black gap-6">
                 <Logo className="relative h-auto text-orange w-3/4 md:w-1/3 mt-7 md:mt-24 mb:8 md:mb-16" />
-                <div className="relative bg-grid-dark w-[72rem] h-[32rem] md:h-[32rem] border-b border-r border-light-grid text-center flex justify-center pt-10 md:pt-20 pb-24 mb-24">
+                <div className="relative bg-grid-dark w-[72rem] h-[32rem] md:h-[32rem] border-b border-r border-light-grid text-center flex justify-center pt-10 md:pt-20 pb-24 mb-16">
                     <div className="hidden md:block max-w-4xl">
                         <Typography variant="h1">
                             {i18nDictionary["home.1"]}
@@ -122,8 +123,25 @@ export default async function Home({ params: { lang } }: HomeProps) {
                     className={{ root: "text-center max-w-sm" }}
                 >
                     {i18nDictionary["home.6"]}
-                    <br />
+                </Typography>
+                <Button
+                    href="https://app.staging.carrot.community"
+                    className={{
+                        root: "mb-8",
+                        contentWrapper: "flex gap-3 items-center",
+                    }}
+                    size="small"
+                >
+                    <External />
                     {i18nDictionary["home.7"]}
+                </Button>
+                <Typography
+                    uppercase
+                    className={{ root: "text-center max-w-sm" }}
+                >
+                    {i18nDictionary["home.8"]}
+                    <br />
+                    {i18nDictionary["home.9"]}
                 </Typography>
                 <PlayVideoButton
                     playVideoMessage={i18nDictionary["video.play"]}
