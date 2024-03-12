@@ -11,6 +11,7 @@ module.exports = {
             colors: {
                 "twitter-blue": "#22BDD5",
                 "discord-purple": "#CF2CF6",
+                "medium-yellow": "#F6FB18",
                 "light-grid": "rgba(255, 255, 255, 0.25)",
             },
             backgroundImage: {
